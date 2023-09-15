@@ -1,0 +1,42 @@
+<!-- {% extends 'base.html' %}
+
+{% block content %} -->
+
+<h1>Add a form that when submitted creates a new playlist!</h1>
+
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>New Playlist</title>
+</head>
+<body>
+    <form action="" method="POST">
+        {{ form.hidden_tag() }}
+        {% for field in form if field.widget.input_type != "hidden" %}
+        <P>
+            {{field.label}}
+            {{field}}
+        </P>
+        {% endfor %}
+        <button>Submit</button>
+    </form>
+    <!-- <form action="." method="post" name="new_playlist">
+
+        <label for="input1">Playlist Name</label>
+        <input type="text" id="input1"> 
+        <br>
+        <br>
+        <label for="input1">ID</label>
+        <input type="text" id="input1"> 
+        <br>
+        <br>
+        <label for="input1">Description</label>
+        <input type="text" id="input1"> 
+        <br>
+        <br>
+        <input type="submit">
+       
+    </form> -->
+</body>
+<!-- {% endblock %} -->

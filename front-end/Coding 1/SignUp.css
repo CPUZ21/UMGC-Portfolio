@@ -1,0 +1,13 @@
+button {
+    background-color: skyblue;
+    font-size: 100px;
+    color: white;
+    border-radius: 10px;
+    transition: background-color;
+    border-width: 1px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #5E90B2;
+}

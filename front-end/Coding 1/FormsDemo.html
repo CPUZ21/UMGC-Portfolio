@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms Demo</title>
+</head>
+<body>
+    <h1>Forms Demo!</h1>
+    <h2>Register</h2>
+    <form>
+        <label for="email">Enter Email:</label>
+        <input type="email" placeholder="Email" name="email" id="email">
+        <br>
+        <label>
+            Enter Password:
+            <input type="password" name="password">
+        </label>
+
+        <label> 
+            <input type="checkbox" name="tos-agree"> 
+             I agree to the terms of sevice
+        </label>
+        
+        
+        
+        <p>Select Shirt Size</p>
+        <label> 
+            <input type="radio" name="Shirt Size" value="XS"> 
+            XS 
+        </label>
+        <br>
+        <label> 
+            <input type="radio" name="Shirt Size" value="S"> 
+            S 
+        </label>
+       <br>
+       <label> 
+            <input type="radio" name="Shirt Size" value="M"> 
+            M
+       </label>
+       <br>
+       <label> 
+            <input type="radio" name="Shirt Size" value="L"> 
+            L
+       </label>
+       <br>
+        <button type="submit">Submit Form</button>
+        <!-- <input type="submit" value="GO!"> -->
+    </form> 
+    <form action="post" enctype="multipart/form-data">
+        <label>
+            This won't actually work, but 
+        </label>
+
+    <input type="file">
+</body>
+</html>
