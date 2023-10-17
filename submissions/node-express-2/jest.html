@@ -1,0 +1,13 @@
+<script>   function convertTimeToWords(timeString) {
+    const hours = timeString.slice(0, 2);
+    const minutes = timeString.slice(3, 5);
+    const ampm = hours >= 12 ? "PM" : "AM";
+  
+    const hoursArray = ["twelve", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven"];
+    const minutesArray = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "thirteen", "fourteen", "fifteen", "sixteen", "seventeen", "eighteen", "nineteen", "twenty", "twenty one", "twenty two", "twenty three", "twenty four", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine"];
+  
+    const hoursWord = hoursArray[hours];
+    const minutesWord = minutesArray[minutes];
+  
+    return `${hoursWord} ${minutesWord} ${ampm}`;
+  }</script>
