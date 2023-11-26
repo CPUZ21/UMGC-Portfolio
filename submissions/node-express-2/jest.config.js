@@ -1,4 +1,6 @@
-const time = (h, m) => {
+
+
+function timeWord (h, m) {
     let count = ["zero", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "one", "two", "three", "four", "five", "six", "seven", "eight", "nine", "ten", "eleven", "twelve", "twenty five", "twenty six", "twenty seven", "twenty eight", "twenty nine", "thirty"]
     if (m === 1 && h > 11) {
       return count[h] + " oh one " + "PM";

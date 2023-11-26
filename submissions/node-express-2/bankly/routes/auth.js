@@ -16,6 +16,7 @@ const createTokenForUser = require('../helpers/createToken');
 
 router.post('/register', async function(req, res, next) {
   try {
+    console.log('test');
     const { username, password, first_name, last_name, email, phone } = req.body;
     let user = await User.register({username, password, first_name, last_name, email, phone});
     const token = createTokenForUser(username, user.admin);
@@ -23,7 +24,7 @@ router.post('/register', async function(req, res, next) {
   } catch (err) {
     return next(err);
   }
-}); // end
+});
 
 /** Log in user; return token.
  *
@@ -37,6 +38,7 @@ router.post('/register', async function(req, res, next) {
 
 router.post('/login', async function(req, res, next) {
   try {
+    console.log('made it')
     const { username, password } = req.body;
     let user = User.authenticate(username, password);
     const token = createTokenForUser(username, user.admin);
