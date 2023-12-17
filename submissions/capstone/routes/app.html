@@ -1,19 +1,21 @@
 <html>
-    <input type="text" value="">
-    <button></button>
     <script src="https://apis.google.com/js/api.js"></script>
     
-
+    <!-- <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> -->
+    <script src="app.js"></script>
     <div class="search-box-container">
-      <form action="#" class="js-search-form search-box">
+      <form onsubmit="watchSubmit()" class="js-search-form search-box">
        <label for="query"></label>
-       <input type="text" class="js-query search-form" placeholder="Search me">
-       <button type="submit" class="button">Search</button>
+       <input type="text" class="js-query search-form" placeholder="Search me" id="search-value">
+       <button type="submit" class="button" id="search">Search</button>
      </form>
    </div>
  
    <h2>Results</h2>
-    <script>src="./app.js"</script>
+    
+    <script>
+
+    </script>
    <div class="js-search-results">
  
    </div>
@@ -58,8 +60,6 @@
   
 
 </script>
-<button onclick="authenticate().then(loadClient)">authorize and load</button>
-<button onclick="execute()">execute</button>
 
 </html>
 
